@@ -1,0 +1,41 @@
+
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: nginx-website
+data:
+  index.html: |
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Kubernetes NGINX Project</title>
+      <style>
+        body {
+          font-family: Arial, sans-serif;
+          background: #eef4f8;
+          color: #17324d;
+          text-align: center;
+          padding: 60px 20px;
+        }
+        .card {
+          max-width: 650px;
+          margin: auto;
+          padding: 35px;
+          background: white;
+          border-radius: 12px;
+          box-shadow: 0 4px 18px #00000015;
+        }
+        h1 { color: #246b9e; }
+      </style>
+    </head>
+    <body>
+      <div class="card">
+        <h1>My First Kubernetes Project</h1>
+        <p>NGINX Website Deployment with Kubernetes</p>
+        <p>Deployed locally using Minikube and Docker.</p>
+        <p>Features: Deployments, Services, Scaling and Health Probes.</p>
+      </div>
+    </body>
+    </html>
